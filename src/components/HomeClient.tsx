@@ -58,7 +58,7 @@ const navigate=useRouter()
                 className='fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-zinc-200'
             >
                 <div className='max-w-7xl mx-auto px-6 h-16 flex items-center justify-between'>
-                    <div className='text-lg font-semibold tracking-tight'>Support <span className='text-zinc-400'>AI</span></div>
+                    <div className='text-lg font-semibold tracking-tight'>Lotus Support  <span className='text-[#EC4899]'>AI</span></div>
                     {email ? <div className='relative' ref={popupRef}>
                         <button className='w-10 h-10 rounded-full
                   bg-black text-white
@@ -107,7 +107,7 @@ const navigate=useRouter()
                     >
                         <h1 className='text-4xl md:text-5xl font-semibold leading-tight'>
                             AI Customer Support <br />
-                            Built for Modern Websites
+                            Built for <span className='text-[#EC4899]'>Modern Websites</span>
                         </h1>
                         <p className='mt-6 text-lg text-zinc-600 max-w-xl'>
                             Add a powerful AI chatbot to your website in minutes.
