@@ -32,7 +32,7 @@ function EmbedClient({ ownerId }: { ownerId: string }) {
                     transition={{ duration: 0.5 }}
                     className="w-full max-w-4xl  bg-white rounded-2xl shadow-xl p-10"
                 >
-                    <h1 className='text-2xl font-semibold mb-2 text-[#EC4899]'>Embed ChatBot</h1>
+                    <h1 className='text-2xl font-semibold mb-2'>Embed ChatBot</h1>
                     <p>Copy and paste this code before <code>&lt;/body&gt;</code></p>
                     <div className='relative bg-zinc-900 text-zinc-100 rounded-xl p-5 text-sm font-mono mb-10'>
                         <pre className='overflow-x-auto'>{embedCode}</pre>
