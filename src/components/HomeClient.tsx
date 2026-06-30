@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from "motion/react"
 import axios from 'axios'
 import { useRouter } from 'next/navigation'
+import { Bot } from 'lucide-react'
 
 
 function HomeClient({ email }: { email: string }) {
@@ -114,13 +115,13 @@ const navigate=useRouter()
                         </p>
                         <div className='mt-10 flex gap-4'>
 
-                            {email ? <button className=' px-7 py-3 rounded-xl
+                            {email ? <button className='cursor-pointer px-7 py-3 rounded-xl
                     bg-black text-white font-medium
                     hover:bg-zinc-800 transition
                     disabled:opacity-60' onClick={()=>navigate.push("/dashboard")}>Go to Dashboard</button> : <button className=' px-7 py-3 rounded-xl
                     bg-black text-white font-medium
                     hover:bg-zinc-800 transition
-                    disabled:opacity-60'
+                    disabled:opacity-60 cursor-pointer'
                                 onClick={handleLogin}
                             >Get Started</button>}
 
@@ -148,14 +149,14 @@ const navigate=useRouter()
                                 animate={{ y: [0, -12, 0] }}
                                 transition={{ repeat: Infinity, duration: 3 }}
                                 className="
-                absolute -bottom-6 -right-6
+                absolute -bottom-17 -right-1
                 w-14 h-14 rounded-full
                 bg-black text-white
                 flex items-center justify-center
                 shadow-xl
               "
                             >
-                                🗨️
+                                 <Bot className="w-8 h-8" />
                             </motion.div>
                         </div>
 
