@@ -1,6 +1,6 @@
 (function () {
 
-    const api_Url = "https://lotus-support-ai.vercel.app/api/chat"
+    const api_Url = "http://localhost:3000/api/chat"
 
     const scriptTag = document.currentScript;
     const ownerId = scriptTag.getAttribute("data-owner-id")
@@ -11,7 +11,7 @@
     }
 
     const button = document.createElement("div")
-    button.innerHTML = "🗨️"
+    button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>`
 
     Object.assign(button.style, {
         position: "fixed",
@@ -38,8 +38,8 @@
         position: "fixed",
         bottom: "90px",
         right: "24px",
-        width: "320px",
-        height: "420px",
+        width: "min(320px, calc(100vw - 32px))",
+        height: "min(420px, calc(100vh - 140px))",
         background: "#fff",
         borderRadius: "14px",
         boxShadow: "0 25px 60px rgba(0,0,0,0.25)",
@@ -167,7 +167,7 @@ sendBtn.onclick=async ()=>{
 
     const data=await response.json()
     messageArea.removeChild(typing)
-    addMessage(data|| "something went wrong","ai")
+    addMessage("something went wrong","ai")
 
 } catch (error) {
     console.log(error)
