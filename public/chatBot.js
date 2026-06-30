@@ -138,7 +138,7 @@ messageArea.scrollTop=messageArea.scrollHeight
 
 }
 
-sendBtn.onclick=async ()=>{
+async sendBtn.onclick=async ()=>{
     const text=input.value.trim()
     if(!text){
         return
@@ -176,7 +176,14 @@ addMessage("something went wrong","ai")
 }
 }
 
+sendBtn.onclick = sendMessage
 
+input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        e.preventDefault()
+        sendMessage()
+    }
+})
 
 
 
