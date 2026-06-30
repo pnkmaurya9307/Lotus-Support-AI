@@ -64,7 +64,7 @@ const navigate=useRouter()
                   bg-black text-white
                   flex items-center justify-center
                   font-semibold
-                  hover:scale-105 transition'
+                  hover:scale-105 transition  cursor-pointer'
                             onClick={() => setOpen(!open)}
                         >{firstLetter}</button>
                         <AnimatePresence>
