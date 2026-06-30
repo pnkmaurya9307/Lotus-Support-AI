@@ -2,6 +2,10 @@
 
 An AI-powered customer support chatbot platform. Sign up, train the bot on your own business knowledge, and embed a lightweight chat widget on any website with a single script tag — powered by Google Gemini.
 
+## Live Project
+
+🔗 [Lotus Support AI](https://lotus-support-ai.vercel.app/)
+
 ## Screenshots
 
 <p align="center">
@@ -84,7 +88,7 @@ In your Scalekit dashboard, add the following as an allowed redirect/callback UR
 http://localhost:3000/api/auth/callback
 ```
 
-
+(Update this to your production domain once deployed.)
 
 ### Run locally
 
@@ -126,7 +130,8 @@ This project is built for deployment on [Vercel](https://vercel.com):
 
 ## License
 
-This project is for personal/educational use. 
+This project is for personal/educational use. Update this section with your preferred license if distributing publicly.
+
 ## Author
 
 Built by **Pankaj Maurya**.
