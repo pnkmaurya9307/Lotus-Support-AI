@@ -1,4 +1,4 @@
-# Lotus Support AI
+
 
 An AI-powered customer support chatbot platform. Sign up, train the bot on your own business knowledge, and embed a lightweight chat widget on any website with a single script tag — powered by Google Gemini.
 
