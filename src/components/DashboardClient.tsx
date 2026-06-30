@@ -63,7 +63,7 @@ if(ownerId){
 
                 >
                     <div className='mb-10'>
-                        <h1 className='text-2xl font-semibold'>ChatBot Settings</h1>
+                        <h1 className='text-2xl font-semibold text-[#EC4899]'>ChatBot Settings</h1>
                         <p className='text-zinc-500 mt-1'> Manage your AI chatbot knowledge and business details</p>
                     </div>
 
