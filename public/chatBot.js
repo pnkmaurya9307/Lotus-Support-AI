@@ -176,6 +176,7 @@ addMessage("something went wrong","ai")
 }
 }
 
+
 sendBtn.onclick = sendMessage
 
 input.addEventListener("keydown", (e) => {
