@@ -84,7 +84,6 @@ const navigate=useRouter()
                         </AnimatePresence>
 
 
-
                     </div> : <button
                         className=' px-5 py-2 rounded-full
                 bg-black text-white text-sm font-medium
