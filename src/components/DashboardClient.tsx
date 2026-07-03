@@ -67,7 +67,7 @@ if(ownerId){
                         <p className='text-zinc-500 mt-1'> Manage your AI chatbot knowledge and business details</p>
                     </div>
 
-                    <div className='mb-10'>
+                  <div className='mb-10'>
                         <h1 className='text-lg font-medium mb-4'>Business Details</h1>
                         <div className='space-y-4'>
                             <input type="text" className='w-full rounded-xl border border-zinc-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black/80' placeholder='Business Name' value={businessName} onChange={(e) => setBusinessName(e.target.value)} />
