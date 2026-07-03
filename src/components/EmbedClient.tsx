@@ -108,5 +108,4 @@ function EmbedClient({ ownerId }: { ownerId: string }) {
         </div>
     )
 }
- 
-export default EmbedClient
+ export default EmbedClient
